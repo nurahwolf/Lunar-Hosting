@@ -1,0 +1,79 @@
+<!--Defining doctype as HTML 5 and head-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Meta features to allow for HTML 5 and CSS 3 features, and for adaptive content such as flex-->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--Title of our page-->
+  <title>Lunar Cloud - Server Provider</title>
+  <!--Allowing Flex to be used-->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--Compiled Stylesheet, oringinal in main.scss-->
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <!--Script for fontawesome icons-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<!--Start of body-->
+<body>
+  <!--Using Javascript for particles as a background for the main page-->
+  <div id="particles-js"></div>
+  <!--A section containing a navbar and hero, with particle background-->
+  <section class="hero is-light is-fullheight is-bold">
+    <!--Navbar-->
+    <nav class="navbar is-transparent">
+      <!--Start of navbar, will be used for logo in final version-->
+      <div class="navbar-brand">
+      </div>
+      <!--Left side of navbar, contains links-->
+      <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="#">Virtual SSD Cloud Servers</a>
+            <a class="navbar-item" href="#">BareMetal SSD Cloud Servers</a>
+            <a class="navbar-item" href="#">Networking</a>
+          </div>
+        </div>
+        <a class="navbar-item" href="pricing.html">Pricing</a>
+        <a class="navbar-item">Support</a>
+        <a class="navbar-item">Developer</a>
+        <a class="navbar-item" href="FAQ.html">FAQ</a>
+        <a class="navbar-item" href="help.html">Help</a>
+      </div>
+      <!--Right side of the navbar-->
+      <div class="navbar-end">
+        <a class="navbar-item">Blog</a>
+        <a class="navbar-item">Log in</a>
+        <div class="navbar-item">
+          <a class="button is-outlined is-primary" href="#">
+            <span class="icon">
+              <i class="fas fa-sign-in-alt"></i>
+            </span>
+            <span>Sign Up</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--Start of Hero, mostly to format the background and span the screen-->
+    <div class="hero-body has-text-centered">
+      <div class="container">
+        
+      </div>
+    </div>
+  </section>
+
+  <!--Loading particles.js in the browser-->
+  <script src="particles.min.js"></script>
+  <!--Initializing the particles JS script, with settings from particles.json-->
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function () {
+      console.log('Callback - particles.js config loaded and for once is not actually broken');
+    });
+  </script>
+  <!--End of document, closing the HTML-->
+</body>
+
+</html>

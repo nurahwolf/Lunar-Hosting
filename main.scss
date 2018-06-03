@@ -1,0 +1,117 @@
+/* Setting of variables such as colours */
+$purple: #895fd6;
+$purple-invert: #fff;
+
+$primary: $purple;
+$primary-invert: $purple-invert;
+
+
+/* Import the rest of the Bulma CSS framework */
+@import "bulma/bulma.sass";
+
+/* Custom CSS */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.card.has-text-centered {
+  .card-header,
+  .card-content,
+  .card-footer {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+}
+
+.card-header {
+  padding: 1.75rem 0;
+}
+
+.card-content {
+  padding: 3.5rem 0;
+}
+
+.card-footer {
+  padding: 1rem 0;
+  border: none;
+  font-size: .9rem;
+  color: lighten(black, 50%);
+}
+
+ .form {
+	background-color: #fff;
+	box-shadow: 0 6px 11px 0 rgba(92,44,115,.3);
+	border: 2px solid #5c2d73;
+	margin: 50px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-nomargin {
+  background-color: #fff;
+  box-shadow: 0 6px 11px 0 rgba(92,44,115,.3);
+  box-sizing: border-box;
+  border: 2px solid #5c2d73;
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  display: block;
+  justify-content: center;
+}
+
+.bundle {
+  padding: 5px;
+  position: relative;
+}
+
+.bundle-container {
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: center;
+  background: none;
+}
+
+.bundle .bundle-wrapper {
+  padding: 10px 0 20px;
+  border: 2px solid #d6d6e4;
+	border-radius: 4px;
+	background: #fff;
+	transition: transform .3s ease-in-out;
+}
+
+.bundle-wrapper {
+  .pricing
+  .discover
+  .top
+  .bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.top hr {
+  border-top: 2px solid $purple;
+  margin: auto;
+  width: 140px;
+  position: relative;
+}
+
+.pricing {
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 18px;
+  }
+}

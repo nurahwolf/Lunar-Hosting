@@ -1,0 +1,482 @@
+<!--Defining doctype as HTML 5 and head-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Meta features to allow for HTML 5 and CSS 3 features, and for adaptive content such as flex-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Title of our page-->
+    <title>Lunar Cloud - Server Provider</title>
+    <!--Allowing Flex to be used-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Compiled Stylesheet, oringinal in main.scss-->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!--Script for fontawesome icons-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<!--Start of body-->
+
+<body>
+    <!--Using Javascript for particles as a background for the main page-->
+    <div id="particles-js"></div>
+    <!--A section containing a navbar and hero, with particle background-->
+    <section class="hero is-light is-fullheight is-bold">
+        <!--Navbar-->
+        <nav class="navbar is-transparent">
+                <!--Start of navbar, will be used for logo in final version-->
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="index.html">
+                    <img src="logo.png" alt="Lunar Logo">
+                  </a>
+                  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+                <!--Navbar menu which calls javascript to show or hide it on mobile-->
+                <div class="navbar-menu" id="navMenu">
+                  <!--Left side of navbar, contains links-->
+                  <div class="navbar-start">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link" href="pricing.html">Products</a>
+                      <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="#">Virtual SSD Cloud Servers</a>
+                        <a class="navbar-item" href="#">BareMetal SSD Cloud Servers</a>
+                        <a class="navbar-item" href="#">Networking</a>
+                      </div>
+                    </div>
+                    <a class="navbar-item" href="pricing.html">Pricing</a>
+                    <a class="navbar-item">Support</a>
+                    <a class="navbar-item">Developer</a>
+                    <a class="navbar-item" href="FAQ.html">FAQ</a>
+                    <a class="navbar-item" href="help.html">Help</a>
+                  </div>
+                  <!--Right side of the navbar-->
+                  <div class="navbar-end">
+                    <a class="navbar-item">Blog</a>
+                    <a class="navbar-item" href="login.html">Log in</a>
+                    <div class="navbar-item">
+                      <a class="button is-outlined is-primary" href="login.html">
+                        <span class="icon">
+                          <i class="fas fa-sign-in-alt"></i>
+                        </span>
+                        <span>Sign Up</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        <!--Start of Hero, mostly to format the background and span the screen-->
+        <div class="hero-body has-text-centered">
+            <!--Form containing detailed server information-->
+            <div class="form-nomargin">
+                <h1 class="title">ARM</h1>
+                <h2 class="subtitle">The ARM series of servers are great for cheap and efficient applications where not much processing power is needed.</h2>
+                <table class="table">
+                    <thead>
+                        <th>Name</th>
+                        <th>Cores</th>
+                        <th>Memory</th>
+                        <th>SSD Disk</th>
+                        <th>Bandwidth</th>
+                        <th>Price</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ARM2</td>
+                            <td>4 ARMv8</td>
+                            <td>2 GB</td>
+                            <td>50 GB</td>
+                            <td>200 Mbit/s</td>
+                            <td>
+                                <span>
+                                    £2.99/mo
+                                    <br>
+                                    <strong>£0.006/hr</strong>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ARM4</td>
+                            <td>6 ARMv8</td>
+                            <td>4 GB</td>
+                            <td>100 GB</td>
+                            <td>200 Mbit/s</td>
+                            <td>
+                                <span>
+                                    £5.99/mo
+                                    <br>
+                                    <strong>£0.012/hr</strong>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ARM8</td>
+                            <td>8 ARMv8</td>
+                            <td>8 GB</td>
+                            <td>200 GB</td>
+                            <td>200 Mbit/s</td>
+                            <td>
+                                <span>
+                                    £11.99/mo
+                                    <br>
+                                    <strong>£0.024/hr</strong>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ARM16</td>
+                            <td>16 ARMv8</td>
+                            <td>16 GB</td>
+                            <td>400 GB</td>
+                            <td>500 Mbit/s</td>
+                            <td>
+                                <span>
+                                    £34.99/mo
+                                    <br>
+                                    <strong>£0.070</strong>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ARM32</td>
+                            <td>32 ARMv8</td>
+                            <td>32 GB</td>
+                            <td>600 GB</td>
+                            <td>500 Mbit/s</td>
+                            <td>
+                                <span>
+                                    £69.99/mo
+                                    <br>
+                                    <strong>£0.140/hr</strong>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ARM64</td>
+                            <td>48 ARMv8</td>
+                            <td>64 GB</td>
+                            <td>800 GB</td>
+                            <td>1 Gbit/s</td>
+                            <td>
+                                <span>
+                                    £139.99/mo
+                                    <br>
+                                    <strong>£0.280/hr</strong>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ARM128</td>
+                            <td>64 ARMv8</td>
+                            <td>128 GB</td>
+                            <td>1 TB</td>
+                            <td>1 Gbit/s</td>
+                            <td>
+                                <span>
+                                    £279.99/mo
+                                    <br>
+                                    <strong>£0.560</strong>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+
+                <h1 class="title">Starter</h1>
+                <h2 class="subtitle">The Starter series are for those wanting a basic x86-64 processor and demonstrate the power of our NVMe disks</h2>
+                <table class="table">
+                    <thead>
+                        <th>Name</th>
+                        <th>Cores</th>
+                        <th>Memory</th>
+                        <th>SSD Disk</th>
+                        <th>Bandwidth</th>
+                        <th>Price</th>
+                    </thead>
+                    <tr>
+                        <td>S1</td>
+                        <td>1 x86-64</td>
+                        <td>1 GB</td>
+                        <td>25 GB NVMe</td>
+                        <td>100 Mbit/s</td>
+                        <td>
+                            <span>
+                                £1.99/mo
+                                <br>
+                                <strong>£0.0004/hr</strong>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2S</td>
+                        <td>2 x86-64</td>
+                        <td>2 GB</td>
+                        <td>50 GB NVMe</td>
+                        <td>200 Mbit/s</td>
+                        <td>
+                            <span>
+                                £3.99
+                                <br>
+                                <strong>£0.008/hr</strong>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4S</td>
+                        <td>4 x86-64</td>
+                        <td>4 GB</td>
+                        <td>100 GB</td>
+                        <td>300 Mbit/s</td>
+                        <td>
+                            <span>
+                                £7.99/mo
+                                <br>
+                                <strong>£0.016</strong>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8S</td>
+                        <td>8 x86-64</td>
+                        <td>8 GB</td>
+                        <td>200 GB</td>
+                        <td>400 Mbit/s</td>
+                        <td>
+                            <span>
+                                £15.99
+                                <br>
+                                <strong>£0.032</strong>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <!--
+                <h1 class="title"></h1>
+                <table class="table">
+                    <thead>
+                        <th>Name</th>
+                        <th>Cores</th>
+                        <th>Memory</th>
+                        <th>SSD Disk</th>
+                        <th>Bandwidth</th>
+                        <th>Internal Bandwidth</th>
+                        <th>Price</th>
+                    </thead>
+                    <tr>
+                        <td>C1</td>
+                        <td>4 ARMv7</td>
+                        <td>2 GB</td>
+                        <td>50 GB</td>
+                        <td>200 Mbit/s</td>
+                        <td>1 Gbit/s</td>
+                        <td>
+                            <span>
+                                £2.99/mo
+                                <br>
+                                <strong>£0.006/hr</strong>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C2S</td>
+                        <td>4 x86-64</td>
+                        <td>8 GB</td>
+                        <td>50 GB</td>
+                        <td>300 Mbit/s</td>
+                        <td>2.5 Gbit/s</td>
+                        <td>
+                            <span>
+                                £11.99/mo
+                                <br>
+                                <strong>£0.024/hr</strong>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C2M</td>
+                        <td>8 x86-64</td>
+                        <td>16 GB</td>
+                        <td>50 GB</td>
+                        <td>500 Mbit/s</td>
+                        <td>5 Gbit/s</td>
+                        <td>
+                            <span>
+                                £17.99/mo
+                                <br>
+                                <strong>£0.036</strong>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C2L</td>
+                        <td>8 x86-64</td>
+                        <td>32 GB</td>
+                        <td>
+                            <span>
+                                50 GB
+                                <br>
+                                <strong>250 GB Direct SSD</strong>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+                -->
+                <h1 class="title"></h1>
+                <table class="table">
+                    <thead>
+                        <th>Name</th>
+                        <th>Cores</th>
+                        <th>Memory</th>
+                        <th>SSD Disk</th>
+                        <th>Bandwidth</th>
+                        <th>Price</th>
+                    </thead>
+                    <tr>
+                        <td>C1</td>
+                        <td>4 ARMv7 cores</td>
+                        <td>2 GB</td>
+                        <td>50 GB</td>
+                        <td>200 Mbit/s external<br />1 Gbit/s internal</td>
+                        <td>
+                            <span>
+                                £2.99/mo
+                                <br />
+                                <strong>£0.006/hour</strong>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C2S</td>
+                        <td>4 x86-64 cores</td>
+                        <td>8 GB</td>
+                        <td>50 GB</td>
+                        <td>300 Mbit/s external<br />2.5 Gbit/s internal</td>
+                        <td>
+                            <span>
+                                £11.99/mo
+                                <br />
+                                <strong>£0.024/hour</strong>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C2M</td>
+                        <td>8 x86-64 cores</td>
+                        <td>16 GB</td>
+                        <td>50 GB</td>
+                        <td>500 Mbit/s external<br />5 Gbit/s internal</td>
+                        <td>
+                            <span>
+                                £17.99/mo
+                                <br />
+                                <strong>£0.036/hour</strong>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C2L</td>
+                        <td>8 x86-64 cores</td>
+                        <td>32 GB</td>
+                        <td>50 GB</td>
+                        <td>500 Mbit/s external<br />5 Gbit/s internal</td>
+                        <td>
+                            <span>
+                                £23.99/mo
+                                <br />
+                                <strong>£0.048/hour</strong>
+                            </span>
+                        </td>
+                    </tr>
+                                            
+                </table>
+                <table class="">
+                    <thead>
+                        <th>Name</th>
+                        <th>Cores</th>
+                        <th>Memory</th>
+                        <th>NVMe SSD</th>
+                        <th>Bandwidth</th>
+                        <th>Price</th>
+                    </thead>
+                    <tr>
+                        <td>HX15</td>
+                        <td>6 x86-64</td>
+                        <td>15 GB</td>
+                        <td>200 GB</td>
+                        <td>250 Mbit/s</td>
+                        <td>
+                            <span>
+                                £24.99/mo
+                                <br>
+                                <strong>£0.050/hr</strong>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>HX30</td>
+                        <td>8 x86-64</td>
+                        <td>30 GB</td>
+                        <td>400 GB</td>
+                        <td>500 Mbit/s</td>
+                        <td>
+                            <span>
+                                £49.99/mo
+                                <br>
+                                <strong>£0.100/hr</strong>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>HX60</td>
+                        <td>10 x86-64</td>
+                        <td>60 GB</td>
+                        <td>700 GB</td>
+                        <td>1 Gbit/s</td>
+                        <td>
+                            <span>
+                                £89.99/mo
+                                <br>
+                                <strong>0.181/hr</strong>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>HX120</td>
+                        <td>12 x86-64</td>
+                        <td>120 GB</td>
+                        <td>1 TB</td>
+                        <td>1 Gbit/s</td>
+                        <td>
+                            <span>
+                                £179.99
+                                <br>
+                                <strong>£0.360</strong>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!--Loading particles.js in the browser-->
+    <script src="particles.min.js"></script>
+    <!--Initializing the particles JS script, with settings from particles.json-->
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('Callback - particles.js config loaded and for once is not actually broken');
+        });
+    </script>
+    <!--End of document, closing the HTML-->
+</body>
+
+</html>

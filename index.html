@@ -1,0 +1,255 @@
+<!--Defining doctype as HTML 5 and head-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Meta features to allow for HTML 5 and CSS 3 features, and for adaptive content such as flex-->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--Title of our page-->
+  <title>Lunar Cloud - Server Provider</title>
+  <!--Allowing Flex to be used-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Compiled Stylesheet, oringinal in main.scss-->
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <!--Script for fontawesome icons-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<!--Start of body-->
+
+<body>
+  <!--Using Javascript for particles as a background for the main page-->
+  <div id="particles-js"></div>
+  <!--A section containing a navbar and hero, with particle background-->
+  <section class="hero is-light is-fullheight is-bold">
+    <!--Navbar-->
+    <nav class="navbar is-transparent">
+      <!--Start of navbar, will be used for logo in final version-->
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="logo.png" alt="Lunar Logo">
+        </a>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <!--Navbar menu which calls javascript to show or hide it on mobile-->
+      <div class="navbar-menu" id="navMenu">
+        <!--Left side of navbar, contains links-->
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link" href="pricing.html">Products</a>
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="#">Virtual SSD Cloud Servers</a>
+              <a class="navbar-item" href="#">BareMetal SSD Cloud Servers</a>
+              <a class="navbar-item" href="#">Networking</a>
+            </div>
+          </div>
+          <a class="navbar-item" href="pricing.html">Pricing</a>
+          <a class="navbar-item">Support</a>
+          <a class="navbar-item">Developer</a>
+          <a class="navbar-item" href="FAQ.html">FAQ</a>
+          <a class="navbar-item" href="help.html">Help</a>
+        </div>
+        <!--Right side of the navbar-->
+        <div class="navbar-end">
+          <a class="navbar-item">Blog</a>
+          <a class="navbar-item" href="login.html">Log in</a>
+          <div class="navbar-item">
+            <a class="button is-outlined is-primary" href="login.html">
+              <span class="icon">
+                <i class="fas fa-sign-in-alt"></i>
+              </span>
+              <span>Sign Up</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Start of Hero, mostly to format the background and span the screen-->
+    <div class="hero-body has-text-centered">
+      <div class="container">
+        <!--Title text-->
+        <h1 class="title">Lunar Cloud</h1>
+        <!--Subtitle text-->
+        <h2 class="subtitle">The hosting provider for you</h2>
+
+        <!--Signup Form-->
+        <div class="form columns is-grouped">
+          <p class="column">
+            <!--Email-->
+            <input class="input is-large" type="email" name="user" id="user" placeholder="Email">
+          </p>
+          <p class="column">
+            <!--Password-->
+            <input class="input is-large" type="password" name="pass" id="pass" placeholder="password">
+          </p>
+          <a class="column" href="login.html">
+            <!--Sign up button-->
+            <button class="button input is-large is-primary">Create an account</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Bottom half section containing the cards, wrapped in a grid to support mobile layouts-->
+    <div class="columns bundle-container">
+      <!--An actual grid inside the grid layout. This actually holds the content of the card. It also centers the text-->
+      <div class="column bundle has-text-centered">
+        <div class="bundle-wrapper">
+          <div class="top">
+            <h1 class="title">Arm</h1>
+            <h2 class="subtitle">ARM1</h2>
+            <hr>
+          </div>
+          <div class="bottom">
+            <div class="specs">
+              <strong>4</strong> 64-bit ARMv8 cores</div>
+            <div class="specs">
+              <strong>2 GB</strong> memory</div>
+            <div class="specs">
+              <strong>50 GB</strong> SSD disk</div>
+            <div class="specs">
+              <strong>1</strong> public IPv4 address</div>
+            <div class="specs">
+              <strong>200 Mbit/s</strong> unmetered bandwidth</div>
+            <div class="pricing">
+              <h1>£1.99</h1>
+              <p>per month</p>
+            </div>
+            <div class="discover">
+              <a href="pricing" class="button is-large">Discover</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column bundle has-text-centered">
+        <div class="bundle-wrapper">
+          <div class="top">
+            <h1 class="title">Starter</h1>
+            <h2 class="subtitle">S1</h2>
+            <hr>
+          </div>
+          <div class="bottom">
+            <div class="specs">
+              <strong>1</strong> x86-64 core</div>
+            <div class="specs">
+              <strong>1 GB</strong> memory</div>
+            <div class="specs">
+              <strong>25 GB</strong> NVMe SSD disk</div>
+            <div class="specs">
+              <strong>1</strong> public IPv4 address</div>
+            <div class="specs">
+              <strong>100 Mbit/s</strong> unmetered bandwidth</div>
+            <div class="pricing">
+              <h1>£2.99</h1>
+              <p>per month</p>
+            </div>
+            <div class="discover">
+              <a href="pricing" class="button is-large">Discover</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column bundle has-text-centered">
+        <div class="bundle-wrapper">
+          <div class="top">
+            <h1 class="title">BareMetal</h1>
+            <h2 class="subtitle">C1</h2>
+            <hr>
+          </div>
+          <div class="bottom">
+            <div class="specs">
+              <strong>4</strong> dedicated cores</div>
+            <div class="specs">
+              <strong>2 GB</strong> memory</div>
+            <div class="specs">
+              <strong>50 GB</strong> SSD disk</div>
+            <div class="specs">
+              <strong>1</strong> public IPv4 address</div>
+            <div class="specs">
+              <strong>200 Mbit/s</strong> unmetered bandwidth</div>
+            <div class="pricing">
+              <h1>£9.99</h1>
+              <p>per month</p>
+            </div>
+            <div class="discover">
+              <a href="pricing" class="button is-large">Discover</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column bundle has-text-centered">
+        <div class="bundle-wrapper">
+          <div class="top">
+            <h1 class="title">Professional</h1>
+            <h2 class="subtitle">HX15</h2>
+            <hr>
+          </div>
+          <div class="bottom">
+            <div class="specs">
+              <strong>6</strong> x86-64 high perf cores</div>
+            <div class="specs">
+              <strong>15 GB</strong> memory</div>
+            <div class="specs">
+              <strong>50 GB</strong> NVMe SSD disk</div>
+            <div class="specs">
+              <strong>2</strong> public IPv4 addresses</div>
+            <div class="specs">
+              <strong>400 Mbit/s</strong> unmetered bandwidth</div>
+            <div class="pricing">
+              <h1>£24.99</h1>
+              <p>per month</p>
+            </div>
+            <div class="discover">
+              <a href="pricing" class="button is-large">Discover</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Loading particles.js in the browser-->
+  <script src="particles.min.js"></script>
+  <!--Initializing the particles JS script, with settings from particles.json-->
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function () {
+      console.log('Callback - particles.js config loaded and for once is not actually broken');
+    });
+  </script>
+
+  <!--Inline script for closing and opening navbar on mobile-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Get all "navbar-burger" elements
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(function ($el) {
+          $el.addEventListener('click', function () {
+
+            // Get the target from the "data-target" attribute
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+
+            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+  <!--End of document, closing the HTML-->
+</body>
+
+</html>
