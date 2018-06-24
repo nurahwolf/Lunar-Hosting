@@ -8476,7 +8476,6 @@ label.panel-block:hover {
   border: 2px solid #5c2d73;
   margin: 50px 0;
   padding: 20px;
-  display: flex;
   justify-content: center;
 }
 
@@ -8503,6 +8502,7 @@ label.panel-block:hover {
   padding-right: 50px;
   justify-content: center;
   background: none;
+  overflow: hidden;
 }
 
 .bundle .bundle-wrapper {

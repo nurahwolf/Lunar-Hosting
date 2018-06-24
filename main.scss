@@ -10,6 +10,7 @@ $primary-invert: $purple-invert;
 @import "bulma/bulma.sass";
 
 /* Custom CSS */
+// This defines the custom CSS settings for the particles, mostly to make it show over the full page and also to not overlay on all content
 #particles-js {
   position: absolute;
   width: 100vw;
@@ -18,6 +19,7 @@ $primary-invert: $purple-invert;
   overflow: hidden;
 }
 
+// A few custom settings for the cards that show each servers, to center the text and also change some of the sizes
 .card.has-text-centered {
   .card-header,
   .card-content,
@@ -32,14 +34,17 @@ $primary-invert: $purple-invert;
   }
 }
 
+// Adding some padding to keep the content centered
 .card-header {
   padding: 1.75rem 0;
 }
 
+// Same as above
 .card-content {
   padding: 3.5rem 0;
 }
 
+// Removed the border to give a seamless look and changed  the colours around a little. Added some padding as well
 .card-footer {
   padding: 1rem 0;
   border: none;
@@ -47,16 +52,17 @@ $primary-invert: $purple-invert;
   color: lighten(black, 50%);
 }
 
+ // Added a form with some more custom settings, adding some purple highlight and setting the size of components. Giving it a flexible property + a purple border
  .form {
 	background-color: #fff;
 	box-shadow: 0 6px 11px 0 rgba(92,44,115,.3);
 	border: 2px solid #5c2d73;
 	margin: 50px 0;
   padding: 20px;
-  display: flex;
   justify-content: center;
 }
 
+// Same as above, just a version without a margin
 .form-nomargin {
   background-color: #fff;
   box-shadow: 0 6px 11px 0 rgba(92,44,115,.3);
@@ -69,19 +75,23 @@ $primary-invert: $purple-invert;
   justify-content: center;
 }
 
+// Adding some padding between elements, mostly for mobile screens
 .bundle {
   padding: 5px;
   position: relative;
 }
 
+// Keeping things seperate by a fixed degree, keeping elements from bunching up on small screens
 .bundle-container {
   padding-bottom: 50px;
   padding-left: 50px;
   padding-right: 50px;
   justify-content: center;
   background: none;
+  overflow: hidden;
 }
 
+// Same as the above, also added a transion effect
 .bundle .bundle-wrapper {
   padding: 10px 0 20px;
   border: 2px solid #d6d6e4;
@@ -90,6 +100,7 @@ $primary-invert: $purple-invert;
 	transition: transform .3s ease-in-out;
 }
 
+// Fixed padding for some elements
 .bundle-wrapper {
   .pricing
   .discover
@@ -100,6 +111,7 @@ $primary-invert: $purple-invert;
   }
 }
 
+// Created a small purple divider line between title and card content
 .top hr {
   border-top: 2px solid $purple;
   margin: auto;
@@ -107,6 +119,7 @@ $primary-invert: $purple-invert;
   position: relative;
 }
 
+// Changed font settings for the 'header' of the card
 .pricing {
   h1 {
     font-size: 24px;
